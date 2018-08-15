@@ -4,8 +4,8 @@ with open("../../README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="beam-python-extended",
-    version="0.0.1",
+    name="beam-extended",
+    version="0.0.3",
     author="Pascal Gula",
     author_email="pascal@plantix.net",
     description="Extend Apache Beam python API with new modules",
@@ -15,7 +15,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     classifiers=(
         "Programming Language :: Python :: 2",
-        "License :: OSI Approved :: Apache 2.0 License",
+        "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
     ),
 )
