@@ -5,17 +5,22 @@ with open("../../README.md", "r") as fh:
 
 setuptools.setup(
     name="beam-extended",
-    version="0.0.3",
-    author="Pascal Gula",
-    author_email="pascal@plantix.net",
+    version="0.0.7",
     description="Extend Apache Beam python API with new modules",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/PEAT-AI/beam-extended",
-    packages=setuptools.find_packages(),
+    author="Pascal Gula",
+    author_email="pascal@plantix.net",
     classifiers=(
         "Programming Language :: Python :: 2",
         "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
     ),
+    keywords=['Apache', 'Beam', 'python'],
+    url="https://github.com/PEAT-AI/beam-extended",
+    packages=setuptools.find_packages(),
+    install_requires=[
+        'apache-beam',
+        'pymongo'
+    ]
 )
