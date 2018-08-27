@@ -162,13 +162,14 @@ class _MongoSink(iobase.Sink):
         return self._client
 
     def initialize_write(self):
-        return self.client[self._db][self._coll]
+        # Ensure the client is available before any write operation
+        # self._client = MongoClient(self._url)
+        pass
 
     def open_writer(self, init_result, uid):
-        return _WriteToMongo(init_result, uid)
+        return _WriteToMongo(self.client[self._db][self._coll], uid)
 
     def finalize_write(self, init_result, writer_results):
-        #print '>>>>>>>>>>>>>>>>>>>> finalize_write'
         pass
 
 class _WriteToMongo(iobase.Writer):

@@ -5,7 +5,7 @@ with open("../../README.md", "r") as fh:
 
 setuptools.setup(
     name="beam-extended",
-    version="0.0.7",
+    version="0.0.8",
     description="Extend Apache Beam python API with new modules",
     long_description=long_description,
     long_description_content_type="text/markdown",
