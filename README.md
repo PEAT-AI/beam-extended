@@ -11,7 +11,7 @@ To install the package, please use the `pip` installation as follows:
 
     pip install beam-extended
     
-**Note:** currently, due to Apache Beam constraints, beam-extended is only available for **Python 3.6**.
+**Note:** currently, due to Apache Beam constraints, beam-extended is only available for **Python 2.7**.
 
 ## Example Usage
 
